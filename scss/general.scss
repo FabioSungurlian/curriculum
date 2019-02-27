@@ -1,0 +1,53 @@
+p, li, label{
+	font-size: 1.25em;
+	font-family: futura, Helvetica;
+	padding-bottom: 0.1em;
+	line-height: 1.5;
+}
+
+p, form {
+	margin: 0.4em;
+}
+form {
+	margin-left: 1em;
+}
+ul, ol {
+	background: #eff7ff;
+	border: 3px ridge #dddddd;
+	margin: 0.5em 1em;
+	display: block;
+	text-align: left;
+	overflow-x: hidden;
+
+	li {
+		margin: 0.225em  0.5%;
+		text-align: left;
+		padding: 0 1em;
+		list-style: none;
+	}
+}
+
+.null {
+		color: #cccccc;
+}
+
+strong {
+	font-size: 1.05em;
+}
+a {
+	color: #fffaa0;
+	text-decoration: none;
+
+	&:hover {
+		color: #f2f2f2;
+	}
+	&:focus {
+		color: #f9f9f9;
+	}
+	&:visited {
+		color: #f4bf42;
+	}
+}
+section p:last-of-type, ul li:last-of-type, ol li:last-of-type, li p:last-of-type{
+	border-bottom: 0;
+}

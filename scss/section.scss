@@ -1,0 +1,85 @@
+section {
+	&.general {
+		background: #63a3a3;
+		border: 3px solid #eeeeee;
+		margin: 1.2% 2%;
+		box-sizing: border-box;
+		width: 96%;
+		overflow: hidden;
+	}
+	&.seccion-futura {
+		opacity: 0;
+	}
+  &.opiniones {
+  	text-align: center;
+
+  	.clientes li{
+  		text-align: left;
+  	}
+
+  	li {
+  		text-align: inherit;
+  	}
+
+  	p {
+  		font-size: 1em;
+  	}
+  }
+
+  &.aprendizaje {
+  	h3, h4, p {
+  		padding: 0 5%;
+  	}
+  }
+  &.experiencia ol {
+  	margin:0 5px 0 5px 0;
+  }
+  &.descripcion > .contenido {
+  	margin: 1em auto 1em auto;
+  }
+}
+
+.main-derecha, .main-izquierda {
+	width: 50%;
+
+	&.main-derecha{
+		float: right;
+
+		section.general {
+			background: #e8db7d;
+			border-color: #333;
+
+			a {
+				color: #993901;
+
+				&:hover {
+					color: #c15617;
+				}
+				&:focus {
+					color: #ff8e4c;
+				}
+				&:visited {
+					color: #3d1600;
+				}
+			}
+
+			* {
+				border-color: inherit;
+			}
+
+			.null {
+				color: #444;
+			}
+
+			ul, ol {
+				background: #353535;
+				.null {
+					color: #aaa;
+				}
+			}
+		}
+	}
+	&.main-izquierda{
+		float: left;
+	}
+}

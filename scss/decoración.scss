@@ -1,0 +1,24 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #adadad;
+	border: 10px;
+	font: 12px / 1.2 Garamond, Helvetica;
+	width: 100%;
+	height: 100%;
+	margin: 0 40px 0 0;
+	color: #333;
+}
+header::before, section::before, div::before, header::after, section::after, div::after {
+	clear: both;
+}
+
+@import "general";
+@import "section";
+@import "header";
+@import "media";
