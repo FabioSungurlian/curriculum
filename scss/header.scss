@@ -1,6 +1,6 @@
 .titulo-dom {
-	background: #02020a;
-	border-bottom: 1px solid #ffffff;
+	background: #ba5114;
+	border-bottom: 3px solid #ffffff;
 	padding: 1% 0;
 	width: 100%;
 	text-align: center;
@@ -90,4 +90,8 @@
 		border-color: #222;
     margin: 1% 1%;
     width: 98%;
+
+		h2 {
+			border-bottom: 2px solid #222;
+		}
   }

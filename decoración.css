@@ -8,7 +8,7 @@
 body {
   background: #adadad;
   border: 10px;
-  font: 12px/1.2 Garamond, Helvetica;
+  font: 14px/1.2 Garamond, Helvetica;
   width: 100%;
   height: 100%;
   margin: 0 40px 0 0;
@@ -36,7 +36,7 @@ form {
 
 ul, ol {
   background: #eff7ff;
-  border: 3px ridge #dddddd;
+  border: 3px solid #333;
   margin: 0.5em 1em;
   display: block;
   text-align: left;
@@ -98,8 +98,8 @@ section.opiniones li {
 section.opiniones p {
   font-size: 1em;
 }
-section.aprendizaje h3, section.aprendizaje h4, section.aprendizaje p {
-  padding: 0 5%;
+section section > p {
+  padding: 0 2em;
 }
 section.experiencia ol {
   margin: 0 5px 0 5px 0;
@@ -138,6 +138,7 @@ section.descripcion > .contenido {
 }
 .main-derecha.main-derecha section.general ul, .main-derecha.main-derecha section.general ol, .main-izquierda.main-derecha section.general ul, .main-izquierda.main-derecha section.general ol {
   background: #353535;
+  color: #ccc;
 }
 .main-derecha.main-derecha section.general ul .null, .main-derecha.main-derecha section.general ol .null, .main-izquierda.main-derecha section.general ul .null, .main-izquierda.main-derecha section.general ol .null {
   color: #aaa;
@@ -147,8 +148,8 @@ section.descripcion > .contenido {
 }
 
 .titulo-dom {
-  background: #02020a;
-  border-bottom: 1px solid #ffffff;
+  background: #ba5114;
+  border-bottom: 3px solid #ffffff;
   padding: 1% 0;
   width: 100%;
   text-align: center;
@@ -239,6 +240,9 @@ section.descripcion-pag {
   border-color: #222;
   margin: 1% 1%;
   width: 98%;
+}
+section.descripcion-pag h2 {
+  border-bottom: 2px solid #222;
 }
 
 @media screen and (max-width: 900px) {

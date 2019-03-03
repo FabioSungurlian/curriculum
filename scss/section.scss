@@ -24,18 +24,24 @@ section {
   	p {
   		font-size: 1em;
   	}
-  }
+  }//s
 
-  &.aprendizaje {
-  	h3, h4, p {
-  		padding: 0 5%;
-  	}
+  section > p {
+  		padding: 0 2em;
   }
   &.experiencia ol {
   	margin:0 5px 0 5px 0;
   }
   &.descripcion > .contenido {
   	margin: 1em auto 1em auto;
+
+		ul {
+			clear: both;
+
+			li {
+				float:left;
+			}
+		}
   }
 }
 
@@ -73,6 +79,7 @@ section {
 
 			ul, ol {
 				background: #353535;
+				color: #ccc;
 				.null {
 					color: #aaa;
 				}
