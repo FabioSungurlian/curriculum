@@ -118,6 +118,9 @@ section.descripcion > .contenido {
   background: #e8db7d;
   border-color: #333;
 }
+.main-derecha.main-derecha section.general a:visited, .main-izquierda.main-derecha section.general a:visited {
+  color: #d100ff;
+}
 .main-derecha.main-derecha section.general a, .main-izquierda.main-derecha section.general a {
   color: #666dff;
 }
@@ -126,9 +129,6 @@ section.descripcion > .contenido {
 }
 .main-derecha.main-derecha section.general a:focus, .main-izquierda.main-derecha section.general a:focus {
   color: #969dff;
-}
-.main-derecha.main-derecha section.general a:visited, .main-izquierda.main-derecha section.general a:visited {
-  color: #32003d;
 }
 .main-derecha.main-derecha section.general *, .main-izquierda.main-derecha section.general * {
   border-color: inherit;
