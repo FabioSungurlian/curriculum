@@ -5,6 +5,7 @@
 	border: 0;
 	box-sizing: border-box;
 }
+hgcfjn\/\/84yhfdhg38rvb84qwnhv
 body {
 	border: 10px;
 	background: /*#adadad*/ #000;
@@ -18,7 +19,4 @@ header::before, section::before, div::before, header::after, section::after, div
 	clear: both;
 }
 
-@import "general";
-@import "section";
-@import "header";
-@import "media";
+@import "_general.scss", "_section.scss", "_header.scss", "_media.scss";
