@@ -121,14 +121,20 @@ section.descripcion > .contenido {
 .main-derecha.main-derecha section.general a:visited, .main-izquierda.main-derecha section.general a:visited {
   color: #d100ff;
 }
+.main-derecha.main-derecha section.general a:visited:hover {
+  color: #de55fc
+}
+.main-derecha.main-derecha section.general a:visited:focus {
+  color: #ec96ff
+}
 .main-derecha.main-derecha section.general a, .main-izquierda.main-derecha section.general a {
-  color: #666dff;
+  color: #0099ff;
 }
 .main-derecha.main-derecha section.general a:hover, .main-izquierda.main-derecha section.general a:hover {
-  color: #6670ff;
+  color: #4fb8ff;
 }
 .main-derecha.main-derecha section.general a:focus, .main-izquierda.main-derecha section.general a:focus {
-  color: #969dff;
+  color: #8cd0ff;
 }
 .main-derecha.main-derecha section.general *, .main-izquierda.main-derecha section.general * {
   border-color: inherit;
