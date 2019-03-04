@@ -107,7 +107,7 @@ section.opiniones p {
   font-size: 1em;
 }
 section section > p {
-  padding: 0 2em;
+  padding: 0 0.5em;
 }
 section.experiencia ol {
   margin: 0 5px 0 5px 0;
