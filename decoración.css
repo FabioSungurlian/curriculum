@@ -42,13 +42,19 @@ ul, ol {
   margin: 0.5em 1em;
   display: block;
   text-align: left;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 ul li, ol li {
   margin: 0.225em 0.5%;
   text-align: left;
   padding: 0 1em;
   list-style: none;
+  overflow: hidden;
+}
+
+ul li {
+  display: inline-block;
+  min-width: calc(30% + 5em);
 }
 
 .null {
@@ -282,12 +288,12 @@ body > footer h4 {
   }
 }
 @media screen and (max-width: 420px) {
-  section.general, ul, ol, li {
+  body, section.general, ul, ol, li {
     border-left: none;
     border-right: none;
     margin: 1.2% 0;
+    overflow-x: hidden;
     width: 100%;
-    overflow: auto;
   }
   section.general.general, ul.general, ol.general, li.general {
     margin: 2.4% 0;
@@ -301,9 +307,6 @@ body > footer h4 {
 @media screen and (max-width: 387px) {
   .titulo-dom h1 {
     font-size: 3em;
-  }
-  .titulo-dom input {
-    top: 72px;
   }
 
   h2 {
