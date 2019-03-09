@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #adadad;
+  border: 10px;
+  font: 14px/1.2 Garamond, Helvetica;
+  width: 100%;
+  height: 100%;
+  margin: 0 40px 0 0;
+  color: #333;
+}
+.row {
+  display: flex;
+}
+header::after, section::after, div::after {
+  clear: both;
+}
+
+p, li, label {
+  font-size: 1.25em;
+  font-family: futura, Helvetica;
+  padding-bottom: 0.1em;
+  line-height: 1.5;
+}
+
+p, form {
+  margin: 0.4em;
+}
+
+form {
+  margin-left: 1em;
+}
+
+ul, ol {
+  background: #eff7ff;
+  border: 3px solid #333;
+  margin: 0.5em 1em;
+  display: block;
+  text-align: left;
+  overflow: hidden;
+}
+ul li, ol li {
+  margin: 0.225em 0.5%;
+  text-align: left;
+  padding: 0 1em;
+  list-style: none;
+  overflow: hidden;
+}
+
+ul li {
+  display: inline-block;
+  min-width: calc(30% + 5em);
+}
+
+.null {
+  color: #cccccc;
+}
+
+strong {
+  font-size: 1.05em;
+}
+
+a {
+  color: #fffaa0;
+  text-decoration: none;
+}
+a:hover {
+  color: #f2f2f2;
+}
+a:focus {
+  color: #f9f9f9;
+}
+a:visited {
+  color: #f4bf42;
+}
+
+section p:last-of-type, ul li:last-of-type, ol li:last-of-type, li p:last-of-type {
+  border-bottom: 0;
+}
+
+section.general {
+  background: #63a3a3;
+  border: 3px solid #eeeeee;
+  margin: 1.2% 2%;
+  box-sizing: border-box;
+  width: 96%;
+  overflow: hidden;
+}
+section.seccion-futura {
+  opacity: 0;
+}
+section.opiniones {
+  text-align: center;
+}
+section.opiniones .clientes li {
+  text-align: left;
+}
+section.opiniones li {
+  text-align: inherit;
+}
+section.opiniones p {
+  font-size: 1em;
+}
+section section > p {
+  padding: 0 0.5em;
+}
+section.experiencia ol {
+  margin: 0 5px 0 5px 0;
+}
+section.descripcion > .contenido {
+  margin: 1em auto 1em auto;
+}
+
+.main-derecha, .main-izquierda {
+  width: 50%;
+}
+.main-derecha.main-derecha, .main-izquierda.main-derecha {
+  float: right;
+}
+.main-derecha.main-derecha section.general, .main-izquierda.main-derecha section.general {
+  background: #e8db7d;
+  border-color: #333;
+}
+.main-derecha.main-derecha section.general a:visited, .main-izquierda.main-derecha section.general a:visited {
+  color: #d100ff;
+}
+.main-derecha.main-derecha section.general a:visited:hover {
+  color: #de55fc
+}
+.main-derecha.main-derecha section.general a:visited:focus {
+  color: #ec96ff
+}
+.main-derecha.main-derecha section.general a, .main-izquierda.main-derecha section.general a {
+  color: #0099ff;
+}
+.main-derecha.main-derecha section.general a:hover, .main-izquierda.main-derecha section.general a:hover {
+  color: #4fb8ff;
+}
+.main-derecha.main-derecha section.general a:focus, .main-izquierda.main-derecha section.general a:focus {
+  color: #8cd0ff;
+}
+.main-derecha.main-derecha section.general *, .main-izquierda.main-derecha section.general * {
+  border-color: inherit;
+}
+.main-derecha.main-derecha section.general .null, .main-izquierda.main-derecha section.general .null {
+  color: #444;
+}
+.main-derecha.main-derecha section.general ul, .main-derecha.main-derecha section.general ol, .main-izquierda.main-derecha section.general ul, .main-izquierda.main-derecha section.general ol {
+  background: #353535;
+  color: #ccc;
+}
+.main-derecha.main-derecha section.general ul .null, .main-derecha.main-derecha section.general ol .null, .main-izquierda.main-derecha section.general ul .null, .main-izquierda.main-derecha section.general ol .null {
+  color: #aaa;
+}
+.main-derecha.main-izquierda, .main-izquierda.main-izquierda {
+  float: left;
+}
+
+.titulo-dom {
+  background: #ba5114;
+  border-bottom: 3px solid #ffffff;
+  padding: 1% 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.titulo-dom input[type=search], .titulo-dom h1 {
+  float: none;
+  width: 100%;
+  display: block;
+}
+.titulo-dom h1 {
+  font-size: 2.5em;
+  margin: 10% 1% 10% 1%;
+  float: right;
+  margin: 0.5em 1%;
+  position: relative;
+  top: 0.2em;
+  font-weight: 500;
+  color: #eff7ff;
+}
+.titulo-dom input {
+  width: 40%;
+  margin-top: 1em;
+}
+.titulo-dom input[type=text], .titulo-dom input[type=search] {
+  border: 2px solid #999999;
+}
+.titulo-dom input[type=text][type=search], .titulo-dom input[type=search][type=search] {
+  display: block;
+  float: left;
+  min-width: 86.3px;
+  height: 3%;
+  width: 30em;
+  max-width: 200px;
+  margin: 0 1%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: helvetica, sans-serif;
+  text-align: center;
+}
+h1.null, h2.null, h3.null, h4.null, h5.null, h6.null {
+  border-color: #dddddd;
+}
+
+h2 {
+  border-bottom: 2px solid #eeeeee;
+  padding: 0.375% 0;
+  margin: 0 auto 0 auto;
+  font-size: 2em;
+  background: RGBa(75, 75, 75, 0.5);
+  font-weight: 700;
+}
+
+h3 {
+  border-bottom: 2px solid #eeeeee;
+  margin: 8px auto 8px auto;
+  padding: 4px 0 4px 0;
+  font-size: 1.75em;
+  font-weight: 600;
+}
+
+h4 {
+  border-bottom: 2px solid #cccccc;
+  margin: 5px auto 5px auto;
+  padding: 6px 0 6px 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h5 {
+  margin: 0 auto;
+  padding: 4px 0 4px 0;
+  text-align: center;
+  font-family: Trajan, Helvetica;
+  font-size: 1.1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.025);
+}
+
+header .b {
+  margin: 0 auto 10px auto;
+  background: #33cc88;
+}
+
+section.descripcion-pag {
+  background: #eeeeee;
+  border-color: #222;
+  margin: 1% 1%;
+  width: 98%;
+}
+section.descripcion-pag h2 {
+  border-bottom: 2px solid #222;
+}
+body > footer {
+  background: #333;
+  color: #bbb;
+  border-top: 3px solid #fff;
+}
+body > footer h4 {
+  text-align: left;
+  padding-left: 0.5em;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    line-height: 2;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .main-derecha, .main-izquierda {
+    float: none;
+    width: 100%;
+  }
+
+  section.general {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+@media screen and (max-width: 420px) {
+  body, section.general, ul, ol, li {
+    border-left: none;
+    border-right: none;
+    margin: 1.2% 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  section.general.general, ul.general, ol.general, li.general {
+    margin: 2.4% 0;
+  }
+
+  li {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 387px) {
+  .titulo-dom h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.6em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 286px) {
+  .titulo-dom h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2.3em;
+  }
+
+  h3 {
+    font-size: 1.85em;
+  }
+
+  h4 {
+    font-size: 1.7em;
+  }
+}
+
+
+/*# sourceMappingURL=decoraci%C3%B3n.css.map */
