@@ -79,11 +79,9 @@
   	font-size: 1.1em;
   	border-bottom: 1px solid hsla(0, 0%, 100%, 0.025);
   }
-  header {
-  	.b {
-  		margin: 0 auto 10px auto;
-  		background: #33cc88;
-  	}
+  section.general > header{
+  	margin: 0 auto 10px auto;
+  	background: #33cc88;
   }
   section.descripcion-pag {
     background: #eeeeee;
